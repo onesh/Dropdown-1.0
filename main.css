@@ -1,0 +1,42 @@
+.popover {
+  position: relative;
+}
+.container {
+  z-index: 100;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 1px;
+}
+input[type="text"]:focus {
+  border: 1px solid;
+}
+.fl-left {
+  float:left;
+}
+.fl-right {
+  float:right;
+}
+.pad {
+  padding: 10px;
+}
+.tip-left {
+  position: absolute;
+  top: 35px;
+  content: '';
+  border: 10px solid transparent;
+  width: 0px;
+  border-bottom: 10px solid lightgray;
+}
+.tip-left::before {
+  position: absolute;
+  left: -9px;
+  content: ' ';
+  width: 0px;
+  border-bottom: 10px solid #FFFFFF;
+  border-right: 9px solid transparent;
+  border-left: 9px solid transparent;
+}
+p.title {
+  color: #8C8C8C;
+ font-size: 14px;
+ font-weight: bold;
+}
