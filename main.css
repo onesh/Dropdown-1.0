@@ -40,3 +40,12 @@ p.title {
  font-size: 14px;
  font-weight: bold;
 }
+.list-element {
+  border-bottom: 1px solid #EDEDED;
+  background: aliceblue;
+}
+.material-icons.cursor {
+  cursor: pointer;
+  font-size: 16px;
+  display: block;
+}
