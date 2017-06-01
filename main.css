@@ -20,7 +20,7 @@ input[type="text"]:focus {
 }
 .tip-left {
   position: absolute;
-  top: 35px;
+  top: 37px;
   content: '';
   border: 10px solid transparent;
   width: 0px;
@@ -48,4 +48,8 @@ p.title {
   cursor: pointer;
   font-size: 16px;
   display: block;
+}
+.ul-element {
+  background: #d7e5f7;
+transition: all 1s;
 }

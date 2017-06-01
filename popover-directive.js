@@ -13,7 +13,7 @@ app.directive('popover', function($compile, $timeout, $window, uiFact){
             k4: {
               k5: {
                 k6: "v4",
-                k7:{ k8: "v5" , k9: "v8", k10: "v12"}
+                k7: { k8: "v5" , k9: "v8", k10: "v12"}
               },
               k13: "v2"
             }
@@ -99,9 +99,10 @@ app.directive('popover', function($compile, $timeout, $window, uiFact){
   var result = []
   var iterator = function (obj, val) {
     var keys = Object.keys(obj);
+    var countListItems = keys.length;
     for (var i = 0; i < keys.length; i++) {
        if (isUsableObject(obj[keys[i]], false) === true) {
-         val === true ? result.push('<i class="material-icons cursor" ng-click="toggle($event)">add</i><ul>' + keys[i]) : result.push('<i class="material-icons cursor ng-hide" ng-click="toggle($event)">add</i><ul class="ng-hide">' + keys[i])
+         val === true ? result.push('<i class="material-icons cursor" ng-click="toggle($event)">add</i><ul class="ul-element"><span>' + countListItems + '</span>' + keys[i]) : result.push('<i class="material-icons cursor ng-hide" ng-click="toggle($event)">add</i><ul class="ng-hide"><span>' + countListItems + '</span>' + keys[i])
         //  result.push('<i class="material-icons cursor" ng-click="toggle($event)">add</i><ul>' + keys[i]);
          iterator(obj[keys[i]], false);
        } else if (typeof obj[keys[i]] === 'string') {
